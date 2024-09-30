@@ -1,0 +1,110 @@
+body {
+  font-family: 'Garamond', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  padding: 10px 0;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-section {
+  padding: 40px;
+  background-color: #f4f4f4;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.form-container h1, .form-container h2 {
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  animation: fadeIn 2.5s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:hover, input[type="email"]:hover {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.fancy-button {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: fadeIn 3s ease-in-out;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.fancy-button:hover {
+  background-color: #e68a00;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
